@@ -1,5 +1,6 @@
 ﻿int quit = 0;
 int played = 0;
+string Sin = "sin";
 while (quit == 0)
 {
 // Introductions to game, tell player choose a sin
@@ -22,42 +23,42 @@ while (sinW == 0)
 String sinQ = Console.ReadLine().ToLower();
 if (sinQ == "1" || sinQ == "sloth")
     {
-       string Sin = "Sloth";
+     Sin = "Sloth";
         sinW++;
     }
 else if (sinQ == "2" || sinQ == "wrath")
     {
-        string Sin = "Wrath";  
+       Sin = "Wrath";  
         sinW++;
     }
 else if (sinQ == "3" || sinQ == "gluttony")
     {
-       string Sin = "Gluttony"; 
+        Sin = "Gluttony"; 
         sinW++;
     }
     else if (sinQ == "4" || sinQ == "envy")
     {
-        string Sin = "Envy";
+        Sin = "Envy";
         sinW++;
     }
     else if (sinQ == "5" || sinQ == "lust")
     {
-        string Sin = "Lust";
+        Sin = "Lust";
         sinW++;
     }
     else if (sinQ == "6" || sinQ == "greed")
     {
-        string Sin = "Greed";
+        Sin = "Greed";
         sinW++;
     }
     else if (sinQ == "7" || sinQ == "pride")
     {
-        string Sin = "Pride";
+        Sin = "Pride";
         sinW++;
     }
         else if (sinQ == "8" || sinQ == "murder")
     {
-        string Sin = "Killer";
+        Sin = "Killer";
         sinW++;
     }
     else
@@ -65,8 +66,9 @@ else if (sinQ == "3" || sinQ == "gluttony")
         Console.WriteLine("You have to choose one");
     }
 }
+Console.WriteLine($"I see, so that's what you are. You are one who has commited the Sin of {Sin}, so much to the point that you fully embody it");
+        Console.WriteLine("Beware, the point to which you embody your sin is so large that you'll practically be smelling of it and anyone will easily be able to tell who you are");
 
-Console.WriteLine($"I see, so you're a sinner who has commited the sin of {Sin}");
 // Have player distríbute stats points to improve their capabilities
 
 // Ask the player if they want to play with the ability to see the difficulty of skill checks or not
@@ -78,18 +80,21 @@ Console.WriteLine($"I see, so you're a sinner who has commited the sin of {Sin}"
 // Multiple endings based on Public Opinion and whether you win or lose at the end, your sin also gives an extra little add on in every ending
 
 // 5-7 endings, public opinion low, public opinion high, public opinion medium, win, lose, death and so on
+
+
+// END, restart or quit
 int Q = 0;
 while (Q == 0)
 {
 Console.WriteLine("Want to play again?");
-String Retry = Console.ReadLine();
-if (Retry == "Yes" || Retry == "yes")
+String Retry = Console.ReadLine().ToLower();
+if (Retry == "y" || Retry == "yes")
     {
     Q++;
        played++;
        Console.Clear();
     }
-    else if (Retry == "No" || Retry == "no")
+    else if (Retry == "n" || Retry == "no")
     {
         quit++;
         Q++;
