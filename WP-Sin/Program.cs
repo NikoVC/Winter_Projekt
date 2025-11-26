@@ -3,6 +3,7 @@
 int quit = 0;
 int played = 0;
 string Sin = "sin";
+string sinColor = "somethin";
 while (quit == 0)
 {
     int PubOpi = 0;
@@ -42,36 +43,43 @@ String sinQ = Console.ReadLine().ToLower();
 if (sinQ == "1" || sinQ == "sloth")
     {
      Sin = "Sloth";
+     sinColor = "Pale Blue";
         sinW++;
     }
 else if (sinQ == "2" || sinQ == "wrath")
     {
        Sin = "Wrath";  
+     sinColor = "Blood Red";
         sinW++;
     }
 else if (sinQ == "3" || sinQ == "gluttony")
     {
         Sin = "Gluttony"; 
+     sinColor = "Dark Brown";
         sinW++;
     }
     else if (sinQ == "4" || sinQ == "envy")
     {
         Sin = "Envy";
+     sinColor = "Shining Green";
         sinW++;
     }
     else if (sinQ == "5" || sinQ == "lust")
     {
         Sin = "Lust";
+     sinColor = "Hot Pink";
         sinW++;
     }
     else if (sinQ == "6" || sinQ == "greed")
     {
         Sin = "Greed";
+     sinColor = "Golden Yellow";
         sinW++;
     }
     else if (sinQ == "7" || sinQ == "pride")
     {
         Sin = "Pride";
+     sinColor = "Royal Purple";
         sinW++;
     }
     else
@@ -89,41 +97,49 @@ String sinQ = Console.ReadLine().ToLower();
 if (sinQ == "1" || sinQ == "sloth")
     {
      Sin = "Sloth";
+     sinColor = "Pale Blue";
         sinW++;
     }
 else if (sinQ == "2" || sinQ == "wrath")
     {
        Sin = "Wrath";  
+     sinColor = "Blood Red";
         sinW++;
     }
 else if (sinQ == "3" || sinQ == "gluttony")
     {
         Sin = "Gluttony"; 
+     sinColor = "Dark Brown";
         sinW++;
     }
     else if (sinQ == "4" || sinQ == "envy")
     {
         Sin = "Envy";
+     sinColor = "Shining Green";
         sinW++;
     }
     else if (sinQ == "5" || sinQ == "lust")
     {
         Sin = "Lust";
+     sinColor = "Hot Pink";
         sinW++;
     }
     else if (sinQ == "6" || sinQ == "greed")
     {
         Sin = "Greed";
+     sinColor = "Golden Yellow";
         sinW++;
     }
     else if (sinQ == "7" || sinQ == "pride")
     {
         Sin = "Pride";
+     sinColor = "Royal Purple";
         sinW++;
     }
         else if (sinQ == "8" || sinQ == "murder")
     {
         Sin = "Murder";
+     sinColor = "Void Black";
         sinW++;
     }
     else
@@ -159,8 +175,11 @@ Console.WriteLine($"Physicality: {phys}");
 Console.WriteLine($"Magic: {mag}");
 Console.WriteLine($"Tolerance: {tol}");
 Console.WriteLine($"Social: {soc}");
+
 // ConsoleKeyInfo info = Console.ReadKey();
 // if (info.Key == ConsoleKey.D1) {}
+// ^This Code I got help from teach 
+
 ConsoleKeyInfo info = Console.ReadKey();
 if (info.Key == ConsoleKey.D1)
         {
@@ -171,6 +190,7 @@ if (info.Key == ConsoleKey.D1)
             }
             else
             {
+Console.Clear();
 Console.WriteLine("This Stat is already maxxed, try again");
 Console.ReadLine();
             }
@@ -184,6 +204,7 @@ else if (info.Key == ConsoleKey.D2)
             }
             else
             {
+Console.Clear();
 Console.WriteLine("This Stat is already maxxed, try again");
 Console.ReadLine();
             }
@@ -197,6 +218,7 @@ else if (info.Key == ConsoleKey.D3)
             }
             else
             {
+Console.Clear();
 Console.WriteLine("This Stat is already maxxed, try again");
 Console.ReadLine();
             }
@@ -210,22 +232,61 @@ else if (info.Key == ConsoleKey.D4)
             }
             else
             {
+Console.Clear();
 Console.WriteLine("This Stat is already maxxed, try again");
 Console.ReadLine();
             }
         }
-else
-        {
-Console.WriteLine("Invalid Input, try again");
-Console.ReadLine();
-        }
 Console.Clear();
     }
-
+int hp = tol*2;
 
 // Ask the player if they want to play with the ability to see the difficulty of skill checks or not
+bool a = false;
+Console.WriteLine("Now, final thing before you'll be sent into this new world.");
+Console.WriteLine("Would you like to see to play on easy mode? Yes, or no?");
+while (StatP > -1)
+    { 
+string b = Console.ReadLine().ToLower();
+if (b=="yes"||b=="y")
+    {
+        a = true;
+        StatP--;
+    }
+    else if (b=="no"||b=="n")
+    {
+        a = false;
+        StatP--;
+    }
+    else
+        {
+Console.WriteLine("Try again");
+        }
+    }
 
 //Begin story and do stuff
+// Tutorial Guide Summoner, dialouge workings, skill checks, Sin Checks
+Console.Clear();
+Console.WriteLine("...");
+Console.ReadLine();
+Console.WriteLine("...");
+Console.ReadLine();
+Console.BackgroundColor = ConsoleColor.White;
+Console.ForegroundColor = ConsoleColor.Black;
+Console.Clear();
+Console.WriteLine("A bright white light shines through your lidded eyes as you awake in a brightly lit room.");
+Console.WriteLine("The room is circular in nature, wood plank floors with cobblestone walls, a few messy shelves stacked up against them");
+Console.WriteLine($"Right in front of you stands a woman, golden hair flowing over her shoulder and golden eyes that meet your own {sinColor} eyes");
+
+// Console.ForegroundColor = ConsoleColor.Yellow;
+// Console.WriteLine("Guiding Star:");
+// Console.ForegroundColor = ConsoleColor.Black;
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine("Guiding Star: Greeting's Sinner, I am your personal guiding star, assigned to your aid in this new world");
+Console.ForegroundColor = ConsoleColor.Black;
+
+
+
 
 // Have dialouge and skill checks, with extra sin actions and addons to the dialogue based on your sin
 
