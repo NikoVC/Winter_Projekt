@@ -1,4 +1,6 @@
-﻿using System.Security.Cryptography;
+﻿using System.Diagnostics;
+using System.Security.Cryptography;
+using System.Xml;
 
 int quit = 0;
 int played = 0;
@@ -12,13 +14,11 @@ while (quit == 0)
 // Introductions to game, tell player choose a sin
 Console.WriteLine("...");
 Console.WriteLine("Greetings player and welcome to the game that is driven upon the sins you commit");
-Console.WriteLine("");
 Console.WriteLine("While Alive you believed yourself virtuous and pure");
 Console.WriteLine("Unfortunately that isn't as true as you would've hoped");
 Console.ReadLine();
 Console.Clear();
 Console.WriteLine("During the happenings of this game You'll be sent to a new world, this world is in danger and it is your job to save it");
-Console.WriteLine("");
 Console.WriteLine("Why? You ask, it's simple this is your redemption, trek through this new world and make up for your sins and once you're done you'll be granted heaven");
 Console.ReadLine();
 Console.Clear();
@@ -27,13 +27,13 @@ Console.Clear();
 Console.WriteLine("Choose the sing you align with the most");
 //Blabla seven sins
 Console.WriteLine("");
-Console.WriteLine("Sloth, The sin of apathy and abondonment of one owns will");
-Console.WriteLine("Wrath, The sin of unwavering rage and burning hatred");
-Console.WriteLine("Gluttony, The sin of a ravenous hunger that is never sated");
-Console.WriteLine("Envy, The sin of want and longing for what others have");
-Console.WriteLine("Lust, The sin of submission to depravity and pleasure never found");
-Console.WriteLine("Greed, The sin of taking more & more & more & more & more and MORE");
-Console.WriteLine("Pride, The lion sin of Superiority");
+Console.WriteLine("1. Sloth, The sin of apathy and abondonment of one owns will");
+Console.WriteLine("2. Wrath, The sin of unwavering rage and burning hatred");
+Console.WriteLine("3. Gluttony, The sin of a ravenous hunger that is never sated");
+Console.WriteLine("4. Envy, The sin of want and longing for what others have");
+Console.WriteLine("5. Lust, The sin of submission to depravity and pleasure never found");
+Console.WriteLine("6. Greed, The sin of taking more & more & more & more & more and MORE");
+Console.WriteLine("7. Pride, The lion sin of Superiority");
 int sinW = 0;
 if (played == 0)
 {
@@ -90,7 +90,7 @@ else if (sinQ == "3" || sinQ == "gluttony")
 }
 else
 {
-Console.WriteLine("Murder, The sin more depraved than any other. Killing another at the cost of oneself");
+Console.WriteLine("8. Murder, The sin more depraved than any other. Killing another at the cost of oneself");
 while (sinW == 0)
 {
 String sinQ = Console.ReadLine().ToLower();
@@ -150,7 +150,7 @@ else if (sinQ == "3" || sinQ == "gluttony")
 }
 Console.WriteLine($"I see, so that's what you are. You are one who has commited the Sin of {Sin}, so much to the point that you fully embody it");
 Console.WriteLine("Beware, the point to which you embody your sin is so large that you'll practically be smelling of it and anyone will easily be able to tell who you are");
-Console.WriteLine("But for now let's continue with you entrance into this world");
+Console.WriteLine("But for now let's continue with your entrance into this world");
 Console.ReadLine();
 Console.Clear();
 
@@ -277,14 +277,105 @@ Console.Clear();
 Console.WriteLine("A bright white light shines through your lidded eyes as you awake in a brightly lit room.");
 Console.WriteLine("The room is circular in nature, wood plank floors with cobblestone walls, a few messy shelves stacked up against them");
 Console.WriteLine($"Right in front of you stands a woman, golden hair flowing over her shoulder and golden eyes that meet your own {sinColor} eyes");
+Console.WriteLine("");
+
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("Guiding Star: Greeting's Sinner, I am your personal guiding star, assigned to your aid in this new world");
+Console.WriteLine("My divine purpose is to help you journey across these lands and defeat the vile demon king that lay at the end of your road");
+Console.WriteLine("BUT");
+Console.WriteLine("Before you can challenge the Demon King, you have to grow stronger, wiser, kinder");
+Console.WriteLine("And in order to do all these things, you need to learn how to be kind and amicable!");
+Console.WriteLine("That is what I'm here for!");
+Console.WriteLine("To show you how to be kind and Amicable by suggesting possible answers whenever you're meet with a decision");
+Console.WriteLine("Let's run a test example of what I mean!");
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.White;
+Console.ReadLine();
+Console.Clear();
+
+Console.ForegroundColor = ConsoleColor.DarkRed;
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("Corrupted Heart: Pst, hey! Hey! It's me! Your heart! Listen, I'm all corrupted from your sins...");
+Console.WriteLine("Corrupted Heart: So let's ignore that guiding star and just do whatever we want, yeah?");
+Console.WriteLine("Corrupted Heart: Alright, listen, I'm just a heart so I can't hear anything you say, but to make sure that filthy star doesn't realise I'm here I'm just going to stay hidden");
+Console.WriteLine("Corrupted Heart: And I'll just insert our own choices that we can make when talking with people, that way we can pretend to be going along with her plan, but when we start acting however we want we can just blame her");
+Console.WriteLine("Corrupted Heart: Anyway I need to leave now before she comes back, but don't worry! I'm always apart of you! I'm your literal heart after all");
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.White;
+Console.ReadLine();
+Console.Clear();
+
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("Guiding Star: I'm sorry, did you hear something just now? No? Weird, I swore i could hear the annoying screetching of a pesky imp");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.DarkRed;
+Console.WriteLine("Corrupted Heart: Hey! Rude!");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine("Guiding Star: There it was again! A quiet discord of noise that makes eardrums burst and bleed");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.DarkRed;
+Console.WriteLine("Corrupted Heart: Uhhhhhh, nope, just the wind!");
+Console.WriteLine("Corrupted Heart: ... Wind noises~");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine("Guiding Star: Oh! I guess it was just the wind, odd, there isn't supposed to be any wind in here though");
+Console.WriteLine("Guiding Star: Oh well!");
+Console.WriteLine("Guiding Star: Now back onto the test example!");
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.DarkGray;
+Console.ReadLine();
+Console.Clear();
+
+Console.WriteLine("Test Villager A: [GREETINGS SINNER TO MY HUMBLE ABODE. WOULD YOU LIKE A GLASS OF WATER, OR PERHAPS A TEA, OR PERHAPS SOME OTHER TYPE OF REFRESHMENTS.]");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("Guiding Star: Now that you've been provided with a decision, it's time to make a choice, whenever you need to make a choice you can count on me to provide you with the right actions to be kind");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.DarkRed;
+Console.WriteLine("Corrupted Heart: and you can count on me to provide you with choices that do whatever we want, instead of her boring kindness options");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine("Guiding Star: I swear that's more than just the wind, but whatever. Here are your choices!");
+Console.WriteLine("");
+Console.ReadLine();
+
+Console.WriteLine("1. Graciously accept the water refreshment");
+Console.WriteLine("2. Kindly acquiese for the Cup of Tea");
+Console.ForegroundColor = ConsoleColor.DarkRed;
+Console.WriteLine("3. Throw the glass of water in his face!");
+if (Sin == "Murder")
+{
+Console.WriteLine("4. KILL HIM");
+}
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine("Guiding Star: Just press the corresponding number key to select your choice!");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.DarkGray;
+
+// if sin = murder och sin ej = murder
+
+  
+
+
+
 
 // Console.ForegroundColor = ConsoleColor.Yellow;
+// Console.BackgroundColor = ConsoleColor.Black;
 // Console.WriteLine("Guiding Star:");
 // Console.ForegroundColor = ConsoleColor.Black;
-Console.ForegroundColor = ConsoleColor.Yellow;
-Console.WriteLine("Guiding Star: Greeting's Sinner, I am your personal guiding star, assigned to your aid in this new world");
-Console.ForegroundColor = ConsoleColor.Black;
+// Console.BackgroundColor = ConsoleColor.White;
 
+// Console.ForegroundColor = ConsoleColor.DarkRed;
+// Console.BackgroundColor = ConsoleColor.Black;
+// Console.WriteLine("Corrupted Heart:");
+// Console.ForegroundColor = ConsoleColor.Black;
+// Console.BackgroundColor = ConsoleColor.White;
 
 
 
@@ -296,7 +387,10 @@ Console.ForegroundColor = ConsoleColor.Black;
 // 5-7 endings, public opinion low, public opinion high, public opinion medium, win, lose, death and so on
 if (dead == true)
     {
-        // End 7
+Console.WriteLine("You're dead. Sucks to suck, try again");
+Console.WriteLine("Ending dead: DEAD!");
+Console.ReadLine();
+Environment.Exit(0);
     }
 else if (win == true && PubOpi > 15)
     {
