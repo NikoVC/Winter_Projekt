@@ -343,25 +343,244 @@ Console.WriteLine("Guiding Star: I swear that's more than just the wind, but wha
 Console.WriteLine("");
 Console.ReadLine();
 
+bool tut = false;
+while (tut == false)
+{
+Console.BackgroundColor = ConsoleColor.Black;
 Console.WriteLine("1. Graciously accept the water refreshment");
 Console.WriteLine("2. Kindly acquiese for the Cup of Tea");
 Console.ForegroundColor = ConsoleColor.DarkRed;
 Console.WriteLine("3. Throw the glass of water in his face!");
 if (Sin == "Murder")
 {
-Console.WriteLine("4. KILL HIM");
+Console.WriteLine("4. KILL HIM [Murder]");
 }
 Console.WriteLine("");
 Console.ForegroundColor = ConsoleColor.Yellow;
 Console.WriteLine("Guiding Star: Just press the corresponding number key to select your choice!");
 Console.WriteLine("");
-Console.ForegroundColor = ConsoleColor.Black;
 Console.BackgroundColor = ConsoleColor.DarkGray;
+
 
 // if sin = murder och sin ej = murder
 
-  
+ConsoleKeyInfo tutorial = Console.ReadKey();
+if(Sin == "Murder")
+{
+if (tutorial.Key == ConsoleKey.D1)
+        {
+Console.Clear();
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("1. Graciously accept the water refreshment");
+Console.WriteLine("");
+Console.ReadLine();
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.DarkGray;
+Console.WriteLine("Graciously you pick up the glass filled with cold water and take a sip... it tastes like piss");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("Guiding Star: Oh, uhhh, I probably should've told you to not actually drink that water, considering it isn't water");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.DarkGray;
+Console.WriteLine("You panically ask what it was, hoping it wasn't what you think it was");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("Guiding Star: Don't worry, it's just holy water, it's not meant to be drunk but it won't harm you, although it may taste bad considering your a Sinner");
+Console.WriteLine("Guiding Star: Anyway, Good job! You did a good thing... well, kind of, accepting the refreshments wasn't neccasarily good, but it was the kind thing to do! Which is good enough!");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.DarkRed;
+Console.WriteLine("Corrupted Heart: ugh, boring");
+                Console.ReadLine();
+Console.BackgroundColor = ConsoleColor.DarkGray;
+tut = true;
+        }
+else if (tutorial.Key == ConsoleKey.D2)
+        {
+Console.Clear();
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("2. Kindly acquiese for the Cup of Tea");
+Console.WriteLine("");
+Console.ReadLine();
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.DarkGray;
+Console.WriteLine("You decide to acquiese and pick up the steaming cup of tea in front of you, sitting down in order to have a nice and relaxed conversationg with the person beside you");
+Console.WriteLine("");
+Console.WriteLine("Test Villager A: [AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]");
+Console.WriteLine("");
+Console.WriteLine("The blarring noise erupting out of the Villager nearly deafens you as you hastily cover your ears, trying to dampen the pain thrumming for your head");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("Guiding Star: SORRRY! Sorry! sorry... I probably should've warned you about that");
+Console.WriteLine("Guiding Star: Yeah, that actually isn't a real person, shocking I know, but yeah it's a robot ai made by some of the tech's back at Heaven HQ");
+Console.WriteLine("Guiding Star: Thing is, when a human person, more specifically sinners, try to talk to it as if it was a person... well it just starts doing that for some reason, not sure why...");
+Console.WriteLine("Guiding Star: Anyway, Good job! You did a good thing... well, kind of, accepting the refreshments wasn't neccasarily good, but it was the kind thing to do! Which is good enough!");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.DarkRed;
+Console.WriteLine("Corrupted Heart: ugh, boring");
+                Console.ReadLine();
+Console.BackgroundColor = ConsoleColor.DarkGray;
+tut = true;
+        }
+else if (tutorial.Key == ConsoleKey.D3)
+        {
+Console.Clear();
+Console.BackgroundColor = ConsoleColor.Black; 
+Console.ForegroundColor = ConsoleColor.DarkRed;
+Console.WriteLine("3. Throw the glass of water in his face!");
+Console.ReadLine();
+Console.WriteLine("Corrupted Heart: yesssssss!");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.DarkGray;
+Console.WriteLine("You pick up the glass of water before looking at the blank face of the clearly robotic villager in front of you, and you simply thrust your arm forwards a bit causing the water to splash in the face of the Villager");
+Console.WriteLine("The Villager sparks as it's body twists and contorts, the circuitry failing and the wires damaged. Smoke starts to steam out of every crevice in it's metallic body and you simply stare at it in silence");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("Guiding Star: Well... that wasn't... exactly how you were supposed to do that... but I guess it's my fault for leaving that option there, for some reason");
+Console.WriteLine("Guiding Star: And it kind of was obviously not a real person... euhm...");
+Console.WriteLine("Guiding Star: ... Good job? I guess... it wasn't really a good job though, and it was defintely not kind...");
+Console.WriteLine("Guiding Star: ... bad job? Whatever let's just move on");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.DarkRed;
+Console.WriteLine("Corrupted Heart: Muhaha, that is exactly what we needed to do >:)");
+                Console.ReadLine();
+Console.BackgroundColor = ConsoleColor.DarkGray;
+tut = true;
+        }
+else if (tutorial.Key == ConsoleKey.D4)
+        {
+Console.Clear();
+Console.BackgroundColor = ConsoleColor.Black; 
+Console.ForegroundColor = ConsoleColor.DarkRed;
+Console.WriteLine("4. KILL HIM [Murder]");
+Console.ReadLine();
+Console.WriteLine("Corrupted Heart: Feck Yeah!! Lessgoooooo!!");
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.DarkGray;
+Console.WriteLine("... It's a simple process, a process you're all to familiar with. Your target is clearly not human, but it doesn't matter, as soon as anyone becomes your target, that's all they are");
+Console.WriteLine("Nothing more, nothing less");
+Console.WriteLine("The prey infront of you is clearly robotic, that's fine practice is always good");
+Console.WriteLine("You tentatively pick of the glass of water before harshly thrusting your arm into the face of the Villager, spilling water all over it and breaking the glass in the same motion");
+Console.WriteLine("Your hand gets cut on some of shards, but it isn't the first time you've hurt yourself during a kill");
+Console.WriteLine("You quickly take one of the shards before it falls to the ground, it cuts your palm open, you don't care");
+Console.WriteLine("You slash across one of it's eyes, disabiling it before thrusting glass shard into it's throat, a decisive strike that would end any other prey");
+Console.WriteLine("You quickly leap across the room, picking up the tea kettle before bashing the Villager on the back of it's head with the kettle");
+Console.WriteLine("The Villager falls forward lifelessly, it's body nothing more than scrap metal");
+Console.WriteLine("...");
+Console.WriteLine("...");
+Console.WriteLine("...");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("Guiding Star: ... What the Fuck, WHY DID YOU DO THAT?! Oh my... I- wha- it-... uhm... let's quickly move on!");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.DarkRed;
+Console.WriteLine("Corrupted Heart: Oh yeah! That's exactly what I needed, let's kill the star next yeah? Muahahaha ahahah");
+                Console.ReadLine();
+Console.BackgroundColor = ConsoleColor.DarkGray;
+tut = true;
+PubOpi--;
+        }
+}
+else
+    {
+if (tutorial.Key == ConsoleKey.D1)
+        {
+Console.Clear();
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("1. Graciously accept the water refreshment");
+Console.WriteLine("");
+Console.ReadLine();
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.DarkGray;
+Console.WriteLine("Graciously you pick up the glass filled with cold water and take a sip... it tastes like piss");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("Guiding Star: Oh, uhhh, I probably should've told you to not actually drink that water, considering it isn't water");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.DarkGray;
+Console.WriteLine("You panically ask what it was, hoping it wasn't what you think it was");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("Guiding Star: Don't worry, it's just holy water, it's not meant to be drunk but it won't harm you, although it may taste bad considering your a Sinner");
+Console.WriteLine("Guiding Star: Anyway, Good job! You did a good thing... well, kind of, accepting the refreshments wasn't neccasarily good, but it was the kind thing to do! Which is good enough!");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.DarkRed;
+Console.WriteLine("Corrupted Heart: ugh, boring");
+                Console.ReadLine();
+Console.BackgroundColor = ConsoleColor.DarkGray;
+tut = true;
+        }
+else if (tutorial.Key == ConsoleKey.D2)
+        { 
+Console.Clear();
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("2. Kindly acquiese for the Cup of Tea");
+Console.WriteLine("");
+Console.ReadLine();
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.DarkGray;
+Console.WriteLine("You decide to acquiese and pick up the steaming cup of tea in front of you, sitting down in order to have a nice and relaxed conversationg with the person beside you");
+Console.WriteLine("");
+Console.WriteLine("Test Villager A: [AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!]");
+Console.WriteLine("");
+Console.WriteLine("The blarring noise erupting out of the Villager nearly deafens you as you hastily cover your ears, trying to dampen the pain thrumming for your head");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("Guiding Star: SORRRY! Sorry! sorry... I probably should've warned you about that");
+Console.WriteLine("Guiding Star: Yeah, that actually isn't a real person, shocking I know, but yeah it's a robot ai made by some of the tech's back at Heaven HQ");
+Console.WriteLine("Guiding Star: Thing is, when a human person, more specifically sinners, try to talk to it as if it was a person... well it just starts doing that for some reason, not sure why...");
+Console.WriteLine("Guiding Star: Anyway, Good job! You did a good thing... well, kind of, accepting the refreshments wasn't neccasarily good, but it was the kind thing to do! Which is good enough!");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.DarkRed;
+Console.WriteLine("Corrupted Heart: ugh, boring");
+                Console.ReadLine();
+Console.BackgroundColor = ConsoleColor.DarkGray;
+tut = true;
+        }
+else if (tutorial.Key == ConsoleKey.D3)
+        {
+Console.Clear();
+Console.BackgroundColor = ConsoleColor.Black; 
+Console.ForegroundColor = ConsoleColor.DarkRed;
+Console.WriteLine("3. Throw the glass of water in his face!");
+Console.ReadLine();
+Console.WriteLine("Corrupted Heart: yesssssss!");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.DarkGray;
+Console.WriteLine("You pick up the glass of water before looking at the blank face of the clearly robotic villager in front of you, and you simply thrust your arm forwards a bit causing the water to splash in the face of the Villager");
+Console.WriteLine("The Villager sparks as it's body twists and contorts, the circuitry failing and the wires damaged. Smoke starts to steam out of every crevice in it's metallic body and you simply stare at it in silence");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("Guiding Star: Well... that wasn't... exactly how you were supposed to do that... but I guess it's my fault for leaving that option there, for some reason");
+Console.WriteLine("Guiding Star: And it kind of was obviously not a real person... euhm...");
+Console.WriteLine("Guiding Star: ... Good job? I guess... it wasn't really a good job though, and it was defintely not kind...");
+Console.WriteLine("Guiding Star: ... bad job? Whatever let's just move on");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.DarkRed;
+Console.WriteLine("Corrupted Heart: Muhaha, that is exactly what we needed to do >:)");
+                Console.ReadLine();
+Console.BackgroundColor = ConsoleColor.DarkGray;
+tut = true;    
+        }   
+        Console.Clear();
+    }
+}
 
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.White;
+        Console.Clear();
 
 
 
