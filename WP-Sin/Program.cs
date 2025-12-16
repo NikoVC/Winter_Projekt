@@ -578,11 +578,19 @@ tut = true;
     }
 }
 
-Console.ForegroundColor = ConsoleColor.Black;
 Console.BackgroundColor = ConsoleColor.White;
         Console.Clear();
 
-
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("Guiding Star: Alright, I've done all I can to help and I need to leave now. Don't worry I'll still partially be with you and I'll provide you with choice anytime you need to make a decision, but from now on you future is in your own hands.");
+Console.WriteLine("Guiding Star: Good bye :)");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.DarkRed;
+Console.WriteLine("Corrupted Heart: Don't worry, I'll still be here for you >:D");
+Console.WriteLine("Corrupted Heart: Although I may not be able to always communicate with you considering that star over there is the major contributor for my ability to speak right now");
+Console.WriteLine("Corrupted Heart: But do remember, you'll always have a corrupt heart in me. So come around and be evil with me, I'll always give you the option for it");
+Console.WriteLine("Corrupted Heart: Bye, bye now >;)");
 
 // Console.ForegroundColor = ConsoleColor.Yellow;
 // Console.BackgroundColor = ConsoleColor.Black;
@@ -595,6 +603,62 @@ Console.BackgroundColor = ConsoleColor.White;
 // Console.WriteLine("Corrupted Heart:");
 // Console.ForegroundColor = ConsoleColor.Black;
 // Console.BackgroundColor = ConsoleColor.White;
+
+
+Console.BackgroundColor = ConsoleColor.DarkGreen;
+        Console.Clear();
+
+Console.ForegroundColor = ConsoleColor.Black; 
+Console.WriteLine("You awake once more, now laid in a cot inside a small cozy room. The room is small, only large enough to hold the cot you're laying and a small desk that's pressed up against the wall");
+Console.WriteLine("On that wall a small oil painting of fruits and vegetables was hung. On the far end of the room was a small window that led to the outside, which wasn't much to talk about, just a few trees and small village buildings");
+Console.WriteLine("");
+Console.ForegroundColor = ConsoleColor.DarkGray;
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("???: Ah, seems you're awake sinful one. I found you laying uncounscious in the hills just outside the village, to think I would find someone like you out there");
+Console.WriteLine("???: Wait, sorry, I should probably introduce myself");
+Console.WriteLine("Eric: My name is Eric, and I'm the village chief. I know that you're not from this world, I know that you've been summoned and I know why you've been summoned");
+Console.WriteLine("Eric: So if you please go out and complete your mission, it would be greatly helpful");
+
+if (Sin == "Lust")
+    {
+Console.WriteLine("Eric: So long as you stay away from my wife and my daughter do whatever you want");     
+    }
+if (Sin == "Sloth")
+    {
+Console.WriteLine("Eric: ");     
+    }
+if (Sin == "Wrath")
+    {
+Console.WriteLine("Eric: ");     
+    }
+if (Sin == "Gluttony")
+    {
+Console.WriteLine("Eric: ");     
+    }
+if (Sin == "Envy")
+    {
+Console.WriteLine("Eric: ");     
+    }
+if (Sin == "Greed")
+    {
+Console.WriteLine("Eric: ");     
+    }
+if (Sin == "Pride")
+    {
+Console.WriteLine("Eric: ");     
+    }
+if (Sin == "Murder")
+    {
+Console.WriteLine("Eric: ");     
+    }
+// Unique dialouge for ever sin
+
+
+// Console.ForegroundColor = ConsoleColor.Yellow;
+// Console.BackgroundColor = ConsoleColor.Black;
+// Console.WriteLine("1. BlaBlaBla");
+// Console.WriteLine("2. Skill check");
+// Console.WriteLine("3. somethin somethin");
 
 
 
