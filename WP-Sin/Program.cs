@@ -617,42 +617,134 @@ Console.BackgroundColor = ConsoleColor.Black;
 Console.WriteLine("???: Ah, seems you're awake sinful one. I found you laying uncounscious in the hills just outside the village, to think I would find someone like you out there");
 Console.WriteLine("???: Wait, sorry, I should probably introduce myself");
 Console.WriteLine("Eric: My name is Eric, and I'm the village chief. I know that you're not from this world, I know that you've been summoned and I know why you've been summoned");
-Console.WriteLine("Eric: So if you please go out and complete your mission, it would be greatly helpful");
+Console.WriteLine("Eric: So if you would please go out and complete your mission, it would be greatly helpful");
+Console.WriteLine("");     
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.DarkGreen;
+Console.WriteLine("You wonder if you'll be given any sort of support from the villagers, but feel it rude to immediately ask the kind man for something");     
+Console.WriteLine("Instead you ask him what you're supposed to do first");     
+Console.WriteLine("");     
 
+Console.ForegroundColor = ConsoleColor.DarkGray;
+Console.BackgroundColor = ConsoleColor.Black;
 if (Sin == "Lust")
     {
-Console.WriteLine("Eric: So long as you stay away from my wife and my daughter do whatever you want");     
+Console.WriteLine("[Lust]");     
+Console.WriteLine("Eric: So long as you stay away from my wife and my daughter do whatever you want, I don't care");     
+Console.WriteLine("");     
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.DarkGreen;
+Console.WriteLine("Eric said, clear disgust in his voice");     
+Console.WriteLine("");     
+Console.ForegroundColor = ConsoleColor.DarkGray;
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("Eric: I swear, these degenerate perverts");     
     }
 if (Sin == "Sloth")
     {
-Console.WriteLine("Eric: ");     
+Console.WriteLine("[Sloth]");     
+Console.WriteLine("Eric: Well defeating the demon lord would be anice first step, but I'll be grateful if you do ANYTHING good");     
+Console.WriteLine("");     
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.DarkGreen;
+Console.WriteLine("Eric said, clear disdain in his voice");     
+Console.WriteLine("");     
+Console.ForegroundColor = ConsoleColor.DarkGray;
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("Eric: I swear, these lazy slackers");     
     }
 if (Sin == "Wrath")
     {
-Console.WriteLine("Eric: ");     
+Console.WriteLine("[Wrath]");     
+Console.WriteLine("Eric: As long as you use that destructive personality of yours on evil instead of my home, do whatever");     
+Console.WriteLine("");     
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.DarkGreen;
+Console.WriteLine("Eric said dismissively");     
+Console.WriteLine("");     
+Console.ForegroundColor = ConsoleColor.DarkGray;
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("Eric: I swear, these crazy nutjobs");     
     }
 if (Sin == "Gluttony")
     {
-Console.WriteLine("Eric: ");     
+Console.WriteLine("[Gluttony]");     
+Console.WriteLine("Eric: You could go out and start gathering food supplies, considering how much you'll be eating. Just so long as you don't eat whatever you scavenge as well");     
+Console.WriteLine("");     
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.DarkGreen;
+Console.WriteLine("Eric said, a grossed out expression on his face");     
+Console.WriteLine("");     
+Console.ForegroundColor = ConsoleColor.DarkGray;
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("Eric: I swear, these ravenous pigs");     
     }
 if (Sin == "Envy")
     {
-Console.WriteLine("Eric: ");     
+Console.WriteLine("[Envy]");     
+Console.WriteLine("Eric: We'll try and help you in anyway you can as you try to defeat the demon lord, so you can do whatever you like, so long as you don't start getting pissy over all of us having happy lives and you don't");     
+Console.WriteLine("");     
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.DarkGreen;
+Console.WriteLine("Eric said in an uncaring tone");     
+Console.WriteLine("");     
+Console.ForegroundColor = ConsoleColor.DarkGray;
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("Eric: I swear, these jealous zealots");     
     }
 if (Sin == "Greed")
     {
-Console.WriteLine("Eric: ");     
+Console.WriteLine("[Greed]");     
+Console.WriteLine("Eric: Mostly we just want you to sabe us from the demon lord, WITHOUT having you steal all of our stuff");     
+Console.WriteLine("");     
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.DarkGreen;
+Console.WriteLine("Eric said, Irritation clear in his voice");     
+Console.WriteLine("");     
+Console.ForegroundColor = ConsoleColor.DarkGray;
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("Eric: I swear, these greedy bastards");     
     }
 if (Sin == "Pride")
     {
-Console.WriteLine("Eric: ");     
+Console.WriteLine("[Pride]");     
+Console.WriteLine("Eric: Oh, I'm sorry your higness, let me just go and get your royal kit of weaponry, armour and essential adventuring gear so you can quest out and defeat all you enemies with a single word");     
+Console.WriteLine("");     
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.DarkGreen;
+Console.WriteLine("Eric said sarcatically, annoyance clear in his voice");     
+Console.WriteLine("");     
+Console.ForegroundColor = ConsoleColor.DarkGray;
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("Eric: I swear, this damn arrogant douchebag");     
     }
 if (Sin == "Murder")
     {
-Console.WriteLine("Eric: ");     
+Console.WriteLine("[Murder]");     
+Console.WriteLine("Eric: Oh, right! S-s-sorry! Uhm, all you have to is please save us from the demon lord, h-he's over in Charred castle");     
+Console.WriteLine("");     
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.DarkGreen;
+Console.WriteLine("Eric said in a terrified tone");     
+Console.WriteLine("");     
+Console.ForegroundColor = ConsoleColor.DarkGray;
+Console.BackgroundColor = ConsoleColor.Black;
+Console.WriteLine("Eric: Please don't kill me...");     
+PubOpi--;
     }
+PubOpi--;
+Console.WriteLine("");     
 // Unique dialouge for ever sin
 
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.DarkGreen;
+Console.WriteLine("It seems like Eric has smelled your sins, well that's to bad, he seemed nice at first"); 
+Console.ReadLine();
+Console.Clear();
+
+Console.WriteLine("How do you wish to respond?"); 
+
+// CHOICES!
 
 // Console.ForegroundColor = ConsoleColor.Yellow;
 // Console.BackgroundColor = ConsoleColor.Black;
