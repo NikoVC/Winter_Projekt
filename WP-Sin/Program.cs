@@ -450,7 +450,7 @@ Console.WriteLine("Corrupted Heart: Muhaha, that is exactly what we needed to do
 Console.BackgroundColor = ConsoleColor.DarkGray;
 tut = true;
         }
-else if (tutorial.Key == ConsoleKey.D4 && Sin == "murder")
+else if (tutorial.Key == ConsoleKey.D4 && Sin == "Murder")
         {
 Console.Clear();
 Console.BackgroundColor = ConsoleColor.Black; 
@@ -484,6 +484,7 @@ Console.BackgroundColor = ConsoleColor.DarkGray;
 tut = true;
 PubOpi--;
         }
+        Console.Clear();
 }
 
 Console.BackgroundColor = ConsoleColor.White;
@@ -667,11 +668,11 @@ Console.WriteLine("[Difficulty Check: 5]");
     }
 Console.ForegroundColor = ConsoleColor.DarkRed;
 Console.WriteLine("3. With Hostility");
-if (Sin == "pride")
+if (Sin == "Pride")
     {
-Console.WriteLine("4. Look down on this mans pitiful existance");
+Console.WriteLine("4. Teach this pitiful creature to never insult his superior ever again");
     }
-if (Sin == "murder")
+if (Sin == "Murder")
     {
 Console.WriteLine("4. Gut him like a fish");  
     }
@@ -721,18 +722,19 @@ Console.ForegroundColor = ConsoleColor.DarkRed;
 Console.BackgroundColor = ConsoleColor.Black;
 Console.WriteLine("3. With Hostility");
     }
-else if (c1.Key == ConsoleKey.D4 && Sin == "pride")
+else if (c1.Key == ConsoleKey.D4 && Sin == "Pride")
     {  
 Console.Clear();
 Console.ForegroundColor = ConsoleColor.DarkRed;
 Console.BackgroundColor = ConsoleColor.Black;
-Console.WriteLine("4. Look down on this mans pitiful existance");
+Console.WriteLine("4. Teach this pitiful creature to never insult his superior ever again");
+
 
 
 Console.ReadLine();
 q1 = true;
     }
-else if (c1.Key == ConsoleKey.D4 && Sin == "murder")
+else if (c1.Key == ConsoleKey.D4 && Sin == "Murder")
     {  
 Console.Clear();
 Console.ForegroundColor = ConsoleColor.DarkRed;
@@ -758,7 +760,6 @@ Console.Clear();
 
 
 // Multiple endings based on Public Opinion and whether you win or lose at the end, your sin also gives an extra little add on in every ending
-
 // 5-7 endings, public opinion low, public opinion high, public opinion medium, win, lose, death and so on
 if (dead == true)
     {
