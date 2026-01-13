@@ -686,8 +686,14 @@ Console.Clear();
 Console.ForegroundColor = ConsoleColor.Yellow;
 Console.BackgroundColor = ConsoleColor.Black;
 Console.WriteLine("1. Amicably");
+Console.WriteLine("");
+
+Console.ForegroundColor = ConsoleColor.Black;
+Console.BackgroundColor = ConsoleColor.DarkGreen;
+Console.WriteLine("You respond with a calm kindness, gentle telling him that whatever he could donate would be greatly appreciate but if he didn't desire to give you anything you would not mind.");
 
 
+PubOpi ++;
 Console.ReadLine();
 q1 = true;
     }
@@ -697,9 +703,14 @@ Console.Clear();
 Console.ForegroundColor = ConsoleColor.Yellow;
 Console.BackgroundColor = ConsoleColor.Black;
 Console.WriteLine("2. Reassure him you're only here to help [Social Skill Check]");
-// Fail
+// Success
 
 
+
+Console.WriteLine("[You obtained a sword!]");
+PubOpi ++;
+phys ++;
+phys ++;
 Console.ReadLine();
 q1 = true;
     }
@@ -709,9 +720,9 @@ Console.Clear();
 Console.ForegroundColor = ConsoleColor.Yellow;
 Console.BackgroundColor = ConsoleColor.Black;
 Console.WriteLine("2. Reassure him you're only here to help [Social Skill Check]");
-//Success
+//fail
 
-
+PubOpi --;
 Console.ReadLine();
 q1 = true;
     }
@@ -730,7 +741,7 @@ Console.BackgroundColor = ConsoleColor.Black;
 Console.WriteLine("4. Teach this pitiful creature to never insult his superior ever again");
 
 
-
+PubOpi --;
 Console.ReadLine();
 q1 = true;
     }
@@ -741,7 +752,9 @@ Console.ForegroundColor = ConsoleColor.DarkRed;
 Console.BackgroundColor = ConsoleColor.Black;
 Console.WriteLine("4. Gut him like a fish");  
 
-
+PubOpi --;
+PubOpi --;
+PubOpi --;
 Console.ReadLine();
 q1 = true;
     }
